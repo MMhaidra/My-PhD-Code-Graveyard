@@ -1,0 +1,27 @@
+MPICC = mpicc 
+NVCC = nvcc 
+SRC_DIR = ./ 
+INCLUDECC = # my headears here
+INCLUDENVCC = # other headears here
+CCFLAGS = -I/usr/local/cuda-7.5/include/ 
+CCLIB =  -L/usr/local/cuda-7.5/lib64 -lcudart -lcufft -lm -L/usr/lib64/atlas -llapack -I/usr/local/cuda-7.5/include
+CCFLAGS = -O3 -DTARGET_MACHINE=DWARF
+NVCCFLAGS = -arch sm_35 -O3 
+OBJ = # my obj here  .o .o .o
+OBJmpi = # my obj here .o .o
+# OBJmpi = .o .o
+all: $(OBJ) $(OBJmpi)
+	$(MPICC) $(OBJ) $(OBJmpi) -o #my program here -O3 $(PARAMS) $(CCLIB)
+
+# all: $(OBJ) $(OBJmpi)
+# 	$(MPICC) $(OBJ) #my program here .o -o #my program here -O3 $(PARAMS) $(CCLIB)
+	
+$(OBJ): %.o: %.cu $(INCLUDENVCC)
+	$(NVCC) $(NVCCFLAGS) -c $< 
+	
+$(OBJmpi): %.o: %.c $(INCLUDECC)
+	$(MPICC) $(CCFLAGS) $(CCLIB)  -c $< 
+	
+clean: 	
+	rm *.o # name of my main program
+
