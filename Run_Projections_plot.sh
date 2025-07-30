@@ -1,0 +1,37 @@
+#!/bin/bash
+DISCRDIR="/home/mmhaidra/SliceMethod/"
+cd $DISCRDIR
+
+
+
+"""
+# MC Truth Data 
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_20L_3cmVoxel_MCtrue.root  BinaryMap_20L_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_2L_3cmVoxel_MCtrue.root  BinaryMap_2L_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_3cmVoxel_MCtrue.root  BinaryMap_1L_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_4L_2Cubes_Central_3cmVoxel_MCtrue.root BinaryMap_4L_2Cubes_Central_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_2L_2Cubes_Central_3cmVoxel_MCtrue.root BinaryMap_2L_2Cubes_Central_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cubes_Central_3cmVoxel_MCtrue.root BinaryMap_1L_2Cubes_Central_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cubes_Top_3cmVoxel_MCtrue.root BinaryMap_1L_2Cubes_Top_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cubes_Bottom_3cmVoxel_MCtrue.root BinaryMap_1L_2Cubes_Bottom_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_0.7L_2Cubes_Central_3cmVoxel_MCtrue.root BinaryMap_0.7L_2Cubes_Central_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Spheres_Central_3cmVoxel_MCtrue.root BinaryMap_1L_2Spheres_Central_3cmVoxel_MCtrue.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cylinders_Central_3cmVoxel_MCtrue.root BinaryMap_1L_2Cylinders_Central_3cmVoxel_MCtrue.pdf
+"""
+
+
+
+# Data 
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_20L_3cmVoxel.root  BinaryMap_20L_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_2L_3cmVoxel.root  BinaryMap_2L_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_3cmVoxel.root  BinaryMap_1L_3cmVoxel.pdf
+python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_4L_2Cubes_Central_3cmVoxel.root BinaryMap_4L_2Cubes_Central_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_2L_2Cubes_Central_3cmVoxel.root BinaryMap_2L_2Cubes_Central_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cubes_Central_3cmVoxel.root BinaryMap_1L_2Cubes_Central_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cubes_Top_3cmVoxel.root BinaryMap_1L_2Cubes_Top_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cubes_Bottom_3cmVoxel.root BinaryMap_1L_2Cubes_Bottom_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Spheres_Central_3cmVoxel.root BinaryMap_1L_2Spheres_Central_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_1L_2Cylinders_Central_3cmVoxel.root BinaryMap_1L_2Cylinders_Central_3cmVoxel.pdf
+#python plot_3Dhist_BinaryMap.py  $DISCRDIR/BinaryMap_0.7L_2Cubes_Central_3cmVoxel.root BinaryMap_0.7L_2Cubes_Central_3cmVoxel.pdf
+
+
