@@ -11,7 +11,7 @@ A glorious mess of:
 - Python scripts that worked *once* on my laptop after I `conda install --force-reinstall everything`.
 - Half-finished algorithms, abandoned side projects, and the occasional `# TODO: fix this someday (never)`.
 - Data that was "temporary" but is now archaeologically significant.
-- Comments like `// I don't know why this works but don't touch it` and `# This is bad. I am bad.`
+- Comments like `// I don't know why this works, but don't touch it` and `# This is bad. I am bad.`
 
 All code is provided **as-is**, with no warranty, not even the warranty of "this used to run on my old lab machine".
 
@@ -24,11 +24,8 @@ This repo spans the golden era of:
 - `std::cout << "why is this segfaulting?" << std::endl;` ✅
 - Realizing I reinvented `scipy.optimize` in C++ (RIP my time) ✅
 
-Each subfolder is labeled by year or topic, because even in chaos, I tried to be *slightly* organized.
-
 ## 🗃️ How It's Structured
 It's not.
-
 
 ## ⚠️ Warnings
 - Some scripts assume paths like `/home/phduser/lab/data/raw/please-dont-delete/`.
