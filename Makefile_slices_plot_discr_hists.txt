@@ -1,0 +1,32 @@
+ROOTCFLAGS    = $(shell $(ROOTSYS)/bin/root-config --cflags)
+ROOTLIBS      = $(shell $(ROOTSYS)/bin/root-config --libs)
+ROOTGLIBS     = $(shell $(ROOTSYS)/bin/root-config --glibs)
+ 
+CXX           = g++
+CXXFLAGS      = -g -Wall -ansi -fPIC -I$(ROOTSYS)/include
+LD            = g++
+LDFLAGS       = -g
+SOFLAGS       = -shared
+
+NGLIBB         = $(ROOTGLIBS) 
+NGLIBB        += -lMinuit -lTMVA -lXMLIO -lTreePlayer -lMLP -lRooFit -lRooFitCore -lFoam -lMathMore
+#NGLIBB        += /home/andrea/Prog/root/lib/VecACut_cpp.so
+#/home/mohammed/PhD/OwnRootClasses/CutsArray_cpp.so /home/mohammed/PhD/OwnRootClasses/OptCut2_cpp.so
+
+GLIBB          = $(filter-out -lNew, $(NGLIBB))
+
+CXXFLAGS      += $(ROOTCFLAGS)
+LIBS           = $(ROOTLIBS) 
+LIBS          += $(ROOTSYS)/lib/*.sl -lXpm -lX11 -lm -ldld
+.SUFFIXES: .cc,.C
+
+Exec_tag:  slices_plot_discr_hists.C
+# -----------------------------------------------------------------------------
+	$(CXX) $(CXXFLAGS) -c $<
+	$(LD) $(LDFLAGS) -o slices_plot_discr_hists slices_plot_discr_hists.o $(GLIBB)
+
+# ================================================================================
+clean:
+	rm -f *.o slices_plot_discr_hists
+# -----------------------------------------------------------------------------
+
