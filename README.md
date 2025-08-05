@@ -1,6 +1,6 @@
 # 🧠 My PhD Code Graveyard
 
-> "It compiles. Ship it." – Every PhD student, probably me at 3 AM
+> "It compiles. Ship it." – Every PhD candidate, probably was me at 3 AM
 
 Welcome to my digital attic — a chaotic collection of C++ and Python scripts written between 2018 and 2021 during my PhD. This is where dreams went to segfault, and `print("hello")` was my therapist.
 
